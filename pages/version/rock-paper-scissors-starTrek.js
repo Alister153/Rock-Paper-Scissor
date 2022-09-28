@@ -1,11 +1,13 @@
-import { useEffect, useRef, useState } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import { StarTrekOptions } from "../options";
+import { StarTrekOptions } from "../../options";
 import Link from "next/link";
 import { houseChose, rules } from "./rock-paper-scissors";
+import { screenWidth } from "../_app";
 const pentagon = require("../../images/bg-pentagon.svg");
 
 const RockPaperScissorsStarTrek = () => {
+  const screen = useContext(screenWidth);
   const [score, setScore] = useState();
   const [selected, setSelected] = useState();
   const [winner, setWinner] = useState();

@@ -1,6 +1,6 @@
 import { useContext, useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import { NormalOptions, StarTrekOptions } from "../options";
+import { NormalOptions, StarTrekOptions } from "../../options";
 import Link from "next/link";
 import { screenWidth } from "../_app";
 const triangle = require("../../images/bg-triangle.svg");
