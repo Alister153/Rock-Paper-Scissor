@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+body {
+  height: 100vh;
+  background: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 700;
+  color: white;
+}
+* {
+  box-sizing: border-box;
+}
+.homePage {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+:root {
+  --dark-text: hsl(229, 25%, 31%);
+  --score-text: hsl(229, 64%, 46%);
+  --header-outline: hsl(217, 16%, 45%);
+}
+.homePage .selection-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.homePage .selection-wrapper .normal,
+.homePage .selection-wrapper .star-trek-twist {
+  width: 30%;
+  padding: 10px;
+  margin: 30px 0px;
+  cursor: pointer;
+}
+.homePage .selection-wrapper .normal:active,
+.homePage .selection-wrapper .star-trek-twist:active {
+  text-shadow: 0px 0px 20px black;
+}
+
+/* Normal */
+.normal-game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.title-score {
+  border: 1px solid white;
+  border-radius: 10px;
+  width: 50%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 25px;
+}
+.title-score .title {
+  line-height: 1.2rem;
+}
+.title-score .title p {
+  display: table-caption;
+}
+.title-score .score {
+  background-color: white;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+.title-score .score h1:first-child {
+  color: var(--score-text);
+  font-weight: 600;
+}
+.title-score .score h1:last-child {
+  color: var(--dark-text);
+}
+.selection {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.selection .triangle-wrapper {
+  width: 400px;
+  height: 400px;
+}
+.img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+.img-wrapper figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 80%;
+  height: 80%;
+  border-radius: 100%;
+}
+.normal-game #rock {
+  bottom: 100%;
+  right: 100%;
+  transform: translateX(50%) translateY(50%);
+}
+.normal-game #paper {
+  bottom: 0%;
+  right: 50%;
+  transform: translateX(50%) translateY(50%);
+}
+.normal-game #scissors {
+  bottom: 100%;
+  left: 100%;
+  transform: translateX(-50%) translateY(50%);
+}
+
+.bonus-game {
+  height: 100vh;
+}
+.bonus-game #rock {
+  bottom: 0%;
+  right: 0%;
+  transform: translateX(0%) translateY(50%);
+}
+.bonus-game #paper {
+  top: 0%;
+  right: 0%;
+  transform: translateX(50%) translateY(50%);
+}
+.bonus-game #scissors {
+  top: 0%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.bonus-game #lizard {
+  bottom: 0%;
+  left: 0%;
+  transform: translateX(0%) translateY(50%);
+}
+.bonus-game #spock {
+  top: 0%;
+  left: 0%;
+  transform: translateX(-50%) translateY(50%);
+}
+.match {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0px;
+  width: 100%;
+  height: 100%;
+}
+.match-wrapper {
+  width: 60%;
+  height: 75%;
+  display: flex;
+  justify-content: space-between;
+}
+.match .img-wrapper {
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+}
+.match .match-wrapper .winner {
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.cross {
+  cursor: pointer;
+  fill: var(--header-outline);
+}
+
+@media only screen and (max-width: 500px) {
+  .title-score {
+    width: 90%;
+  }
+  .selection .triangle-wrapper {
+    width: 250px;
+    height: 250px;
+  }
+  .img-wrapper {
+    width: 100px;
+    height: 100px;
+  }
+  .match .img-wrapper {
+    width: 150px;
+    height: 150px;
+  }
+  .match-wrapper {
+    width: 100%;
+  }
+}
