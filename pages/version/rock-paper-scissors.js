@@ -124,7 +124,7 @@ const RockPaperScissors = () => {
                   <figure className="">
                     <Image
                       src={NormalOptions[selected].img}
-                      alt="triangle"
+                      alt="playerImg"
                       height={screen > 500 ? 190 : 75}
                       width={screen > 500 ? 190 : 75}
                     ></Image>
@@ -143,7 +143,7 @@ const RockPaperScissors = () => {
                     <figure className="">
                       <Image
                         src={PcSelected.img}
-                        alt="triangle"
+                        alt="pcimg"
                         height={screen > 500 ? 190 : 75}
                         width={screen > 500 ? 190 : 75}
                       ></Image>

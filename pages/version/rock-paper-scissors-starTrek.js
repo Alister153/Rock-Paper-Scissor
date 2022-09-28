@@ -89,7 +89,7 @@ const RockPaperScissorsStarTrek = () => {
                     <figure className="">
                       <Image
                         src={StarTrekOptions[selected].img}
-                        alt="pentagon"
+                        alt="playerImg"
                         height={screen > 500 ? 190 : 75}
                         width={screen > 500 ? 190 : 75}
                       ></Image>
@@ -108,7 +108,7 @@ const RockPaperScissorsStarTrek = () => {
                       <figure className="">
                         <Image
                           src={PcSelected.img}
-                          alt="pentagon"
+                          alt="pcImg"
                           height={screen > 500 ? 190 : 75}
                           width={screen > 500 ? 190 : 75}
                         ></Image>

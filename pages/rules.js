@@ -19,6 +19,7 @@ const Rules = () => {
       </div>
       <div className="h-auto flex items-center">
         <Image
+          alt="rules"
           src={data.rules === "normalRules" ? normalRules : bonusRules}
           width={screen > 500 ? 550 : 300}
           height={screen > 500 ? 550 : 300}
@@ -30,7 +31,7 @@ const Rules = () => {
           router.back();
         }}
       >
-        <Image src={cross} width={40} height={40} />
+        <Image alt="cross" src={cross} width={40} height={40} />
       </div>
     </div>
   );
