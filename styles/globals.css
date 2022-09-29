@@ -208,8 +208,8 @@ body {
     height: 250px;
   }
   .img-wrapper {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
   }
   .match .img-wrapper {
     width: 150px;
@@ -217,5 +217,10 @@ body {
   }
   .match-wrapper {
     width: 100%;
+  }
+  .match .match-wrapper .winner {
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(50%);
   }
 }
