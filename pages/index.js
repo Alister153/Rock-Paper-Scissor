@@ -22,7 +22,7 @@ export default function Home() {
           <div className="star-trek-twist">
             <div>
               <Link href="/version/rock-paper-scissors-starTrek" className="table-caption">
-                Rock Paper Scissors with Star Trek Twist
+                Rock Paper Scissors (StarTrek)
               </Link>
             </div>
           </div>

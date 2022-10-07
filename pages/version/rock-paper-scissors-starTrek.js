@@ -27,7 +27,7 @@ const RockPaperScissorsStarTrek = () => {
         <div className="wrapper">
           <div className="title-score">
             <div className="title">
-              <p>ROCK PAPER SCISSORS</p>
+              <p>ROCK PAPER SCISSORS LIZARD SPOCK</p>
             </div>
             <div className="score">
               <h1>SCORE</h1>
